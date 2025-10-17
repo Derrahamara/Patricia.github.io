@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>MY PORTFOLIO</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      /* ===== HERO with photo on the right (never drops below on desktop) ===== */
+      #banner { position: relative; overflow: visible; }
+      #banner .inner.hero-grid{
+        display:grid;
+        grid-template-columns: 1fr 280px;   /* text | photo */
+        align-items:center;
+        gap: 2rem;
+      }
+      #banner .photo{
+        width:260px; height:260px; border-radius:50%;
+        object-fit:cover; border:4px solid #fff;
+        box-shadow:0 6px 18px rgba(0,0,0,.25);
+      }
+      @media (max-width: 980px){
+        #banner .inner.hero-grid{
+          grid-template-columns: 1fr;
+          justify-items:center;
+          text-align:center;
+        }
+      }
+
+      /* ===== Tiles: make images show and crop nicely ===== */
+      .tiles article .image{ height:220px; }
+      .tiles article .image img{
+        width:100%; height:100%; object-fit:cover; display:block;
+      }
+      .tiles article header.major{ padding:1.5rem; }
+      .tiles article header.major p{ margin:0; line-height:1.45; font-size:.95rem; }
+      @media (max-width: 980px){ .tiles article .image{ height:180px; } }
+      /* smaller body text under each project header (keep titles same size) */
+.tiles article header.major p,
+.tiles article header.major p.note {
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+    </style>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header" class="alt">
+        <a href="index.html" class="logo"><strong>PATRICIA'S</strong> <span>PORTFOLIO</span></a>
+        <nav><a href="#menu">Menu</a></nav>
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="elements.html">VIEW MY CV</a></li>
+        </ul>
+        <ul class="actions stacked">
+          <li><a href="http://linkedin.com/in/chideraamaraegbu" class="button primary fit">LinkedIn</a></li>
+          <li><a href="https://wa.me/2348105464453" class="button fit">WHATSAPP</a></li>
+        </ul>
+      </nav>
+
+      <!-- Banner -->
+      <section id="banner" class="major">
+        <div class="inner hero-grid">
+          <div class="text">
+            <header class="major"><h1>Hi, my name is Chidera Patricia Amaraegbu</h1></header>
+            <div class="content">
+              <p>A Data Analyst, Customer and Sales Expert<br>
+              Skilled in Excel, SQL, Power BI, Client Relationship Management and Business Development.</p>
+              <ul class="actions">
+                <li><a href="#one" class="button next scrolly">View my Projects</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Make sure this file exists: /images/profile.jpg (rename your photo to match) -->
+          <img class="photo" src="images/WhatsApp Image 2025-10-17 at 15.01.54_5c39bf2a.jpg" alt="Chidera Patricia Amaraegbu" />
+        </div>
+      </section>
+
+      <!-- Main -->
+      <div id="main">
+
+        <!-- ===== PROJECT TILES (do NOT remove this section line) ===== -->
+        <section id="one" class="tiles">
+
+          <!-- Dynamic Data Search Tool -->
+          <article>
+            <span class="image">
+              <img src="images/DYNAMIC%20SEARCH.jpg" alt="Dynamic Data Search Tool preview">
+            </span>
+            <header class="major">
+              <h3>Dynamic Data Search Tool — Excel Lookup & Automation</h3>
+              <p>Instant keyword filtering across Name, Department, Email, City, and Status.</p>
+              <ul class="actions">
+                <li><a class="button" href="https://1drv.ms/x/c/6c83a99fcb70c206/EdcvZxJeNkpOsnlthmfL6pQBItO6Z9WCiVQHQSySArkw7w" target="_blank" rel="noopener">View Project</a></li>
+              </ul>
+              <p class="note">Built from my Miss Excel Help Desk workflows — synthetic/anonymized data.</p>
+            </header>
+          </article>
+
+          <!-- Cross-Sheet Order Matching / Lookup -->
+          <article>
+            <span class="image">
+              <img src="images/SQL%20image.JPG" alt="Cross-Sheet Matching preview">
+            </span>
+            <header class="major">
+              <h3>Cross-Sheet Order Matching / Lookup — Excel</h3>
+              <p>Validates client vs order records using XLOOKUP/IFNA + conditional formatting.</p>
+              <ul class="actions">
+                <li><a class="button" href="https://1drv.ms/x/c/6c83a99fcb70c206/EUYIqiE-PCFEpymJ3E2RjqgBxoGEBhSpotpQrtVCBzjJtg?e=Iip4nF" target="_blank" rel="noopener">View Project</a></li>
+              </ul>
+            </header>
+          </article>
+
+          <!-- Customer Orders Automation Tool (VBA) -->
+          <article>
+            <span class="image">
+              <img src="images/python%20image.jpg" alt="Orders Automation macro preview">
+            </span>
+            <header class="major">
+              <h3>Customer Orders Automation Tool — Excel VBA</h3>
+              <p>Cleans & formats orders, builds analysis-ready table + monthly revenue summary.</p>
+              <ul class="actions">
+                <li><a class="button" href="https://1drv.ms/x/c/6c83a99fcb70c206/EaP6CUSmLiBCqulfGo3-mfABmONmWMbOubPY5vHt-Ys-NQ" target="_blank" rel="noopener">View Project</a></li>
+                <li><a class="button alt" href="https://1drv.ms/b/c/6c83a99fcb70c206/EQFHcjARIOdOtTrhS6zm6W8BGEpyvEqEMFDnkmLzDU2jKw" target="_blank" rel="noopener">View PDF Guide</a></li>
+              </ul>
+              <p class="note">Inspired by workflows I handled at Miss Excel Help Desk — demo uses synthetic data.</p>
+            </header>
+          </article>
+
+          <!-- Power BI: Dimensional Modeling -->
+          <article>
+            <span class="image">
+              <img src="images/POWER%20BI%20IMAGE.JPG" alt="Power BI Dimensional Modeling preview">
+            </span>
+            <header class="major">
+              <h3>Data Integration & Dimensional Modeling in Power BI</h3>
+              <p>Integrated multi-source sales data, modeled KPIs, and visualized performance.</p>
+              <ul class="actions">
+                <li><a href="https://onedrive.live.com/?qt=allmyphotos&photosData=%2fshare%2f6C83A99FCB70C206!s8187ea6772d54c0697a62cbd05a5e572%3fithint%3dphoto%26e%3dJhGx1d%26migratedtospo%3dtrue&cid=6C83A99FCB70C206&id=6C83A99FCB70C206!s8187ea6772d54c0697a62cbd05a5e572&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2kvYy82YzgzYTk5ZmNiNzBjMjA2L0VXZnFoNEhWY2daTWw2WXN2UVdsNVhJQmFZc3l6OWNaMGFrTUpldWZLZ2U3VGc_ZT1KaEd4MWQ" class="button" target="_blank" rel="noopener">View Dashboard</a></li>
+                <li><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvYy82YzgzYTk5ZmNiNzBjMjA2L0VTWjI4SXJWakFkTWdLWnh4Z3FuZXZrQkwyR0g3M0lsdkhvYlM1WlpxN1FjUnc%5FZT10S1NVYUU&cid=6C83A99FCB70C206&id=6C83A99FCB70C206%21s8af076268cd54c0780a671c60aa77af9&parId=root&o=OneUp" class="button alt" target="_blank" rel="noopener">View Full Project</a></li>
+              </ul>
+            </header>
+          </article>
+
+          <!-- Power BI: AdventureWorks -->
+          <article>
+            <span class="image">
+              <img src="images/sales%20performance%20image%20-%20Copy.jpg" alt="AdventureWorks insights preview">
+            </span>
+            <header class="major">
+              <h3>AdventureWorks — Data Exploration & Insights (Power BI)</h3>
+              <p>Sales, product & customer trends; surfaced actionable opportunities.</p>
+              <ul class="actions">
+                <li><a href="https://1drv.ms/i/c/6c83a99fcb70c206/EUy5QMg2XIFEoi79dS8EZhYB9VQoQL9lQIbn3EYQq3x0_w?e=fvw2vG" class="button" target="_blank" rel="noopener">View Dashboard</a></li>
+                <li><a href="https://1drv.ms/u/c/6c83a99fcb70c206/Eeac2IP4FBBAr8xeGzYtY5MB_XTe9l5-UmFApQLa7abUdA?e=cYYruf" class="button alt" target="_blank" rel="noopener">View Full Project</a></li>
+              </ul>
+            </header>
+          </article>
+
+          <!-- Excel: WISABI Bank -->
+          <article>
+            <span class="image">
+              <img src="images/WISABI%20BANK%20IMAGE.JPG" alt="WISABI Bank analysis preview">
+            </span>
+            <header class="major">
+              <h3>WISABI Bank ATM Transaction Trend Analysis — Excel</h3>
+              <p>Identified peak usage times and behavioral patterns across a full year.</p>
+              <ul class="actions">
+                <li><a href="https://1drv.ms/i/c/6c83a99fcb70c206/EUy5QMg2XIFEoi79dS8EZhYBd7RgGhv-MwdugF7Dm9sijw" class="button" target="_blank" rel="noopener">View Dashboard</a></li>
+                <li><a href="https://1drv.ms/u/c/6c83a99fcb70c206/Eeac2IP4FBBAr8xeGzYtY5MB_XTe9l5-UmFApQLa7abUdA" class="button alt" target="_blank" rel="noopener">View Full Project</a></li>
+              </ul>
+            </header>
+          </article>
+
+          <!-- SQL: Superstore -->
+          <article>
+            <span class="image">
+              <img src="images/SUPERSTORE%20IMAGE.JPG" alt="SQL Superstore analysis preview">
+            </span>
+            <header class="major">
+              <h3>SQL Analysis of Superstore Dataset</h3>
+              <p>Extraction, joins, aggregation & segmentation to reveal sales performance.</p>
+              <ul class="actions">
+                <li><a href="https://1drv.ms/u/c/6c83a99fcb70c206/Eeac2IP4FBBAr8xeGzYtY5MB_XTe9l5-UmFApQLa7abUdA" class="button" target="_blank" rel="noopener">View Project</a></li>
+              </ul>
+            </header>
+          </article>
+
+          <!-- Python Projects -->
+          <article>
+            <span class="image">
+              <img src="images/SQL%20image.JPG" alt="Python projects preview">
+            </span>
+            <header class="major">
+              <h3>My Python Projects</h3>
+              <p>Small scripts & games showing problem-solving and automation skills.</p>
+              <ul class="actions">
+                <li><a href="https://colab.research.google.com/drive/1sGoOPhht8e058f0JFNZrxBuXoWDRw74k?usp=sharing" class="button" target="_blank" rel="noopener">View Project</a></li>
+              </ul>
+            </header>
+          </article>
+
+        </section>
+
+        <!-- About -->
+        <section id="two">
+          <div class="inner">
+            <header class="major"><h2>About me</h2></header>
+            <p>Analytical and results-driven professional with over 4 years of combined experience in Data 
+            Analysis, Excel Automation, and Customer Support. Adept at transforming raw data into 
+            meaningful business insights and automating complex spreadsheet workflows. Experienced 
+            working with international clients. Skilled in Excel, Power BI, SQL, and Python, with a strong 
+            foundation in client relationship management.</p>
+            <ul class="actions">
+              <li><a href="elements.html" class="button next">VIEW MY CV</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <section>
+            <h3>View Certifications</h3>
+            <ul class="actions">
+              <li><a href="https://wdc.ng/certificates/wdc-196/" class="button" target="_blank" rel="noopener">Wild Fusion Digital Centre</a></li>
+              <li><a href="https://drive.google.com/open?id=1KJr2ejJS6D9jYJpJh0D2nOOEUs3ig7vE" class="button" target="_blank" rel="noopener">Great Learning Academy</a></li>
+              <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_3guH4Jsf8Q8Mn6KRc_1727118378637_completion_certificate.pdf" class="button" target="_blank" rel="noopener">Accenture Internship</a></li>
+              <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_3guH4Jsf8Q8Mn6KRc_1727075170078_completion_certificate.pdf" class="button" target="_blank" rel="noopener">PwC Internship</a></li>
+            </ul>
+          </section>
+          <section><h3>Location</h3><p>Lagos, Nigeria</p></section>
+          <section><h3>Phone</h3><p><a href="tel:+2348105464453">+234 810 546 4453</a></p></section>
+          <section><h3>Email</h3><p><a href="mailto:Chideraamaraegbu@gmail.com">Chideraamaraegbu@gmail.com</a></p></section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li><a href="https://www.linkedin.com/in/chideraamaraegbu/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+              <li><a href="https://wa.me/2348105464453" class="icon brands alt fa-whatsapp" target="_blank" rel="noopener"><span class="label">WhatsApp</span></a></li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
